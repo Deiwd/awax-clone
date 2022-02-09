@@ -312,6 +312,15 @@
         right: 10px;
     }
 
+    /* --------- [MENU] --------- */
+    /* -------------------------- */
+    .menu_mobile::after,
+    .menu-content .links_menu ul
+    {
+        width: 70vw;
+    }
+
+
     /* --------- [BANNER] --------- */
     /* ---------------------------- */
     .slide-content .box_slide > .container
@@ -487,22 +496,19 @@
     {
         padding: 0;
     }
-
+    
     .inf_footer .inf-text p
     {
         padding: 0;
+    }
+    .inf_footer .copyr p
+    {
+        justify-content: center;
     }
 }
 
 @media only screen and (max-width: 540px)
 {
-    /* --------- [MENU] --------- */
-    /* -------------------------- */
-    .menu_mobile::after,
-    .menu-content .links_menu ul
-    {
-        width: 70vw;
-    }
 
     /* *****[BTN-SLIDE]***** */
     .btn_slide span
