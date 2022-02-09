@@ -1,0 +1,548 @@
+@charset "UTF-8";
+
+/* -------------------- [---- DEIWD ---- ] -------------------- */
+/* ---------------- (https://github.com/deiwd) ---------------- */
+
+@media only screen and (max-width: 1470px)
+{
+    .up_btn
+    {
+        top: -65px;
+        left: auto;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 1140px)
+{
+    .container
+    {
+        max-width: 960px;
+    }
+
+    /* --------- [MENU-MOBILE] --------- */
+    /* --------------------------------- */
+    .menu_mobile
+    {
+        display: flex;
+    }
+    .menu-content
+    {
+        position: relative;
+    }
+    .menu-content .links_menu
+    {
+        z-index: 9999;
+        align-items: end;
+        justify-content: center;
+    }
+    .menu-content .links_menu ul
+    {
+        display: none;
+        top: 100px;
+        right: 0;
+        position: absolute;
+        width: 240px;
+        min-height: calc(100vh - 100px);
+        height: auto;
+        padding: 20px;
+        background-color: rgba(0,0,0,.7);
+        background-color: rgba(var(--color-black),.7);
+    }
+    .menu-content .links_menu  li
+    {
+        border: none;
+        margin: 0;
+    }
+    .menu-content li:hover,
+    .menu-content li.active
+    {
+        color: rgb(185, 139, 87);
+        color: rgb(var(--color-main));
+    }
+
+    .menu_mobile:hover + ul,
+    .menu-content .links_menu ul:hover,
+    .menu_mobile:hover::after
+    {
+        display: block;
+    }
+
+    /* --------- [PROJECTS] --------- */
+    /* ------------------------------ */
+    .projects-content .box_photos
+    {
+        width: 300px;
+    }
+
+    /* --------- [TEAM] --------- */
+    /* -------------------------- */
+    .team-content .box_inf
+    {
+        width: 307px;
+    }
+
+    /* --------- [PRICE] --------- */
+    /* --------------------------- */
+    .plans_card
+    {
+        width: 220px;
+        padding: 20px;
+    }
+
+    /* --------- [ABOUT-WORK] --------- */
+    /* -------------------------------- */
+    .aboutWork-content .box_work
+    {
+        width: 220px;
+    }
+}
+
+@media only screen and (max-width: 980px)
+{
+    .container
+    {
+        max-width: 720px;
+    }
+
+    /* --------- [ABOUT-US] --------- */
+    /* ------------------------------ */
+    .aboutUs-content .container
+    {
+        align-items: center;
+        flex-direction: column;
+    }
+    .aboutUs-content .video_aboutUs
+    {
+        margin: 0;
+    }
+    .aboutUs-content .inf_aboutUs
+    {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .aboutUs-content .inf_aboutUs p
+    {
+        text-align: left;
+    }
+
+    /* --------- [SERVICES] --------- */
+    /* ------------------------------ */
+    .services-content .container
+    {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .services-content .box
+    {
+        width: 360px;
+        margin-bottom: 20px;
+    }
+    .services-content .box:first-child
+    {
+        border-left: 0;
+    }
+    .services-content .box:nth-child(2n+2)
+    {
+        border: none;
+    }
+    .services-content .box:nth-child(1n+3)
+    {
+        margin: 0;
+    }
+
+    /* --------- [PROJECTS] --------- */
+    /* ------------------------------ */
+    .projects-content .box_photos
+    {
+        width: 345px;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+
+    /* --------- [TEAM] --------- */
+    /* -------------------------- */
+    .team-content .box_inf
+    {
+        width: 350px;
+    }
+
+    /* --------- [FEEDBACK] --------- */
+    /* ------------------------------ */
+    .box_feedback
+    {
+        padding: 0 40px;
+    }
+
+    /* --------- [PARTNER] --------- */
+    /* ----------------------------- */
+    .partner-area ul
+    {
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .partner-area li
+    {
+        width: 240px;
+        justify-content: center;
+    }
+
+    /* --------- [PRICE] --------- */
+    /* --------------------------- */
+    .price-content .container
+    {
+        flex-wrap: wrap;
+    }
+    .plans_card
+    {
+        width: 340px;
+        margin-bottom: 40px;
+    }
+    .plans_card:nth-child(1n+3)
+    {
+        margin: 0;
+    }
+
+    /* --------- [PRODUCT] --------- */
+    /* ----------------------------- */
+    .box_slide--product
+    {
+        padding: 0 90px;
+    }
+    .box_slide--product .inf
+    {
+        flex-direction: column;
+    }
+    .box_slide--product .inf .picture
+    {
+        margin-bottom: 20px;
+    }
+
+    /* --------- [ABOUT-WORK] --------- */
+    /* -------------------------------- */
+    .aboutWork-content .container
+    {
+        flex-wrap: wrap;
+    }
+    .aboutWork-content .box_work
+    {
+        width: 360px;
+    }
+
+    /* --------- [FOOTER] --------- */
+    /* ---------------------------- */
+
+    /* ***** [MAP] ***** */
+    .footer-content .map_footer
+    {
+        height: auto;
+        padding: 0;
+        background-color: rgb(255, 255, 255);
+        background-color: rgb(var(--color-white));
+    }
+    .map_footer .contact
+    {
+        width: 100%;
+    }
+    .map--img
+    {
+        position: static;
+        height: 280px;
+    }
+
+    /* ***** [INF] ***** */
+    .inf_footer .container
+    {
+        flex-wrap: wrap;
+    }
+    .inf_footer .box
+    {
+        width: 100%;
+        flex: none;
+        margin-bottom: 40px;
+    }
+    .inf_footer .inf-subs
+    {
+        order: 1;
+        padding: 0px 0;
+    }
+    .inf_footer .box-subscribe
+    {
+        padding: 5% 16%;
+    }
+
+    .inf_footer .info-links
+    {
+        order: 2;
+        align-items: center;
+    }
+    .inf_footer .info-links .copyr
+    {
+        display: none;
+    }
+
+    .inf_footer .inf-text
+    {
+        order: 3;
+    }
+    
+    .inf_footer .copyr
+    {
+        order: 4;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 740px)
+{
+    body
+    {
+        font-size: 5vw;
+    }
+    .container
+    {
+        max-width: none;
+        padding: 0 10px;
+    }
+
+    .up_btn
+    {
+        right: 10px;
+    }
+
+    /* --------- [BANNER] --------- */
+    /* ---------------------------- */
+    .slide-content .box_slide > .container
+    {
+        font-size: .55em;
+    }
+    .slide-content .box_slide h3
+    {
+        font-size: 1.4em;
+    }
+
+    /* --------- [ABOUT-US] --------- */
+    /* ------------------------------ */
+    .aboutUs-content .video_aboutUs
+    {
+        width: 100%;
+        height: 48vw;
+    }
+
+    /* --------- [SERVICES] --------- */
+    /* ------------------------------ */
+    .services-content .box
+    {
+        width: 100%;
+        border: 0;
+        padding: 0;
+    }
+    .services-content .box:nth-child(2n+3)
+    {
+        margin-bottom: 20px;
+    }
+
+    /* --------- [PROJECTS] --------- */
+    /* ------------------------------ */
+    .menu-filter_projects ul
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .menu-filter_projects li a::after
+    {
+        width: 0;
+    }
+
+    .projects-content .box_photos
+    {
+        width: 100%;
+        height: 48vw;
+    }
+    .projects-content .box_photos .inf-photo .desc
+    {
+        justify-content: center;
+    }
+
+    /* --------- [TEAM] --------- */
+    /* -------------------------- */
+    .team-content .box_inf
+    {
+        width: calc(100vw - 20px);
+    }
+
+    /* --------- [FEEDBACK] --------- */
+    /* ------------------------------ */
+    .feedback-content .slide-area_feedback > .container
+    {
+        width: calc(100vw - 20px);
+        padding: 0;
+    }
+
+    /* --------- [PARTNER] --------- */
+    /* ----------------------------- */
+    .partner-area
+    {
+        padding: 3vw 0;
+    }
+    .partner-area li
+    {
+        width: 33.33vw;
+        padding: 12px 5px;
+    }
+    .partner-area li img
+    {
+        width: 16vw;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* --------- [PRICE] --------- */
+    /* --------------------------- */
+    .plans_card
+    {
+        width: calc(100vw - 20px);
+    }
+
+    .plans_card:nth-child(2n+3)
+    {
+        margin-bottom: 40px;
+    }
+
+    /* --------- [PRODUCT] --------- */
+    /* ----------------------------- */
+    .product-content .slide_product .container
+    {
+        width: calc(100vw - 20px);
+    }
+    .box_slide--product .list
+    {
+        margin: 0;
+    }
+
+    /* --------- [ABOUT-WORK] --------- */
+    /* -------------------------------- */
+    .aboutWork-content .box_work
+    {
+        width: calc(100vw - 20px);
+        padding: 0px 0px 20px 0;
+    }
+    .aboutWork-content .box_work:last-child
+    {
+        padding: 0;
+    }
+    .aboutWork-content .box_work .value
+    {
+        height: auto;
+    }
+
+    /* --------- [SHARE] --------- */
+    /* --------------------------- */
+    .share-content ul
+    {
+        flex-wrap: wrap;
+    }
+    .share-content li:first-child
+    {
+        width: 100vw;
+        margin-bottom: 10px;
+    }
+    .share-content li:first-child,
+    .share-content li:last-child
+    {
+        margin-right: 0;
+    }
+
+    /* --------- [CONTACT] --------- */
+    /* ----------------------------- */
+    .contact-content form
+    {
+        width: 100%;
+    }
+
+    /* --------- [FOOTER] --------- */
+    /* ---------------------------- */
+    .map_footer .contact
+    {
+        padding: 30px 0;
+    }
+    .map_footer li p
+    {
+        flex: 1;
+    }
+    .map--img
+    {
+        height: 190px;
+        background-size: auto;
+    }
+
+    .footer-content .inf_footer
+    {
+        padding: 30px 0;
+    }
+
+    .box_slide--product
+    {
+        padding: 0;
+    }
+
+    .inf_footer .inf-text p
+    {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 540px)
+{
+    /* --------- [MENU] --------- */
+    /* -------------------------- */
+    .menu_mobile::after,
+    .menu-content .links_menu ul
+    {
+        width: 70vw;
+    }
+
+    /* *****[BTN-SLIDE]***** */
+    .btn_slide span
+    {
+        width: 30px;
+        height: 30px;
+        margin: 0 10px;
+        border-width: 3px;
+    }
+
+    /* --------- [SHARE] --------- */
+    /* --------------------------- */
+    .share-content ul
+    {
+        justify-content: space-evenly;
+    }
+    .share-content li
+    {
+        margin: 0;
+    }
+    .share-content li span
+    {
+        margin: 0;
+    }
+    .share-content li p
+    {
+        display: none;
+    }
+    
+    /* --------- [CONTACT] --------- */
+    /* ----------------------------- */
+    .inf_footer .box-subscribe label
+    {
+        font-size: .8em;
+    }
+
+    /* --------- [FOOTER] --------- */
+    /* ---------------------------- */
+    .map--img
+    {
+        display: none;
+    }
+}
